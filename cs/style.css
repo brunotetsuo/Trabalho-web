@@ -78,6 +78,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(3px);
 }
 
 #menu_adicionar {
@@ -183,6 +184,7 @@ input[type="date"] {
     width: 14%;
     text-align: center;
     text-decoration: none;
+    justify-content: center;
 }
 
 .voltar_menu:hover {
@@ -196,6 +198,7 @@ input[type="date"] {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(3px);
 }
 
 #menu_emprestimo {
@@ -278,6 +281,7 @@ label {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(3px);
 }
 
 .box {
@@ -319,6 +323,7 @@ label {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(3px);
 }
 
 .body_login::before {
@@ -408,6 +413,7 @@ label {
   align-items: center;
   justify-content: center;
   position: relative;
+  backdrop-filter: blur(3px);
 }
 
 .body_cadastro {
@@ -420,6 +426,7 @@ label {
   align-items: center;
   justify-content: center;
   position: relative;
+  backdrop-filter: blur(3px);
 }
 
 .body_cadastro::before {
@@ -500,6 +507,7 @@ label {
   align-items: center;
   justify-content: center;
   position: relative;
+  backdrop-filter: blur(3px);
 }
 
 .body_escolha::before {
@@ -653,9 +661,10 @@ header h1 {
 }
 
 #body_catalogo {
-  background-image: url("../imagens/");
+  background-image: url("../imagens/catalogo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  backdrop-filter: blur(3px);
 }
