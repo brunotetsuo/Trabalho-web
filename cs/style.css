@@ -1,0 +1,661 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.titulo {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+#menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    background-color: #000000;
+    border-radius: 10px;
+    margin-top: 2%;
+    width: 60%;
+    padding: 1%;
+    margin-left: 19%;
+    justify-content: center;
+
+}
+
+.menu_link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu_link:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#livros {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 30%;
+    padding: 1%;
+    margin: 2% auto;
+}
+
+#imagens-livros {
+    display: flex;
+}
+
+.imagen_menu {
+    display: inline;
+    width: 17%;
+    margin-top: 1%;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #000000;
+    margin-left: 20%;
+}
+
+#body {
+    background-image: url(../imagens/biblioteca_menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#menu_adicionar {
+    display: flex;
+    margin-top: 5%;
+    gap: 10%;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    background-color: #000000;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 15%;
+    padding: 6%;
+}
+
+.div_adicionar {
+    border: 3px solid rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    
+    text-align: center;
+    padding: 2%;
+}
+
+.in_adicionar {
+    margin-top: 6%;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    color: white;
+    padding: 1%;
+    width: 79%;
+    
+}
+
+.in-data {
+    margin-top: 6%;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    padding: 1%;
+    color: white;
+    width: 79%;
+}
+
+input[type="date"] {
+    color: rgb(255, 255, 255);
+    color-scheme: dark;
+}
+
+.in_adicionar::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.in_adicionar:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+.ind-data:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+.in_adicionar:focus {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+.in-data:focus {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#botao_adicionar {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 15%;
+    margin-left: 44%;
+    margin-top: 1%;
+}
+
+#botao_adicionar:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+.voltar_menu {
+    display: flex;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 100px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 14%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.voltar_menu:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#body_adicionar {
+    background-image: url(../imagens/fundo_adicionar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#menu_emprestimo {
+    display: inline-block;
+    flex-wrap: wrap;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    background-color: #000000;
+    border-radius: 10px;
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 16%;   
+    padding: 4%; 
+}
+
+.in_emprestimo {
+    margin-top: 6%;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    color: white;
+    padding: 1%;
+    width: 60%;
+}
+
+.in_emprestimo::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.in_emprestimo:focus {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    
+}
+
+.botao_emprestimo {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 15%;
+    margin-left: 42%;
+    margin-top: 2%;
+}
+
+.botao_emprestimo:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#voltar_menu_emprestimo {
+    display: flex;
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 100px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 14%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+#voltar_menu_emprestimo:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#body_emprestimo {
+    background-image: url(../imagens/emprestimo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 30%;
+    padding: 19%;
+    margin: 2% auto;
+}
+
+.voltar_menu_consulta {
+  display: inline-flex;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
+  border-radius: 100px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 1%;
+  width: 14%;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1%;
+  margin-left: 23%;
+  justify-content: center;
+}
+
+.voltar_menu_consulta:hover {
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+}
+
+#body_consulta {
+    background-image: url(../imagens/consulta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.body_login::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 20px #00ff88, inset 0 0 10px #00ff88;
+  width: 350px;
+  z-index: 1;
+}
+
+#titulo-login {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grupo-campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labell {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+#id_usuario, #senha_login {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #00ff88;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+#id_usuario:focus, #senha_login:focus {
+  border-color: #00ffaa;
+}
+
+#id_usuario:hover {
+  color: rgb(30, 255, 0);
+}
+
+#senha_login:hover {
+  color: rgb(30, 255, 0);
+}
+
+#btn-entrar {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #00ff88;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+#btn-entrar:hover {
+  background: #00ff88;
+  color: black;
+}
+
+.body_login {
+  height: 100vh;
+  background-image: url(../imagens/login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.body_cadastro {
+  height: 100vh;
+  background-image: url("../imagens/cadastro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.body_cadastro::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 25px #00ff88, inset 0 0 10px #00ff88;
+  width: 400px;
+}
+
+#titulo-cadastro {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.grupo-campo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.in_cadastro {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #00ff88;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.in_cadastro:hover {
+  color: rgb(30, 255, 0);
+}
+
+.in_cadastro:focus {
+  border-color: #00ffaa;
+}
+
+#btn-cadastrar {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid #00ff88;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+#btn-cadastrar:hover {
+  background: #00ff88;
+  color: black;
+}
+
+.body_escolha {
+  height: 100vh;
+  background-image: url("../imagens/escolha.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.body_escolha::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 15px;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 30px #00ff88, inset 0 0 10px #00ff88;
+  text-align: center;
+  width: 420px;
+  z-index: 1;
+}
+
+#titulo-principal {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#subtitulo {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#link-cadastro, #link-login {
+  text-decoration: none;
+}
+
+#btn-cadastro, #btn-login {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #00ff88;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-cadastro:hover {
+  background: #00ff88;
+  color: black;
+}
+
+#btn-login:hover {
+  background: #00ff88;
+  color: black;
+}
+
+
+header {
+  color:white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+header h1 {
+  background: black;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 15px;
+  border: 2px solid #00ff66;
+  box-shadow: 0 0 15px #00ff66;
+}
+
+.search-box {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #00ff66;
+  background: black;
+  color: white;
+  box-shadow: 0 0 10px #00ff66;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.livro {
+  background: black;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #00ff66;
+  box-shadow: 0 0 10px #00ff66;
+  transition: 0.3s;
+}
+
+.livro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff66;
+}
+
+.livro img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.livro h3 {
+  margin: 10px 0;
+}
+
+.livro p {
+  color: #ccc;
+}
+
+#reserva {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #00ff66;
+  background: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff66;
+}
+
+#reserva:hover {
+  background: #00ff66;
+  color: black;
+}
+
+#body_catalogo {
+  background-image: url("../imagens/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

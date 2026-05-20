@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../cs/style.css">
+</head>
+<body class="body_cadastro">
+
+  <div class="container">
+    <h1 id="titulo-cadastro">Cadastro de Novo Usuário</h1>
+
+    <form id="form-cadastro" >
+
+      <div class="grupo-campo">
+        <label for="nome" class="labell">Nome:</label>
+        <input class="in_cadastro" type="text" id="nome" name="nome"  required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="email" class="labell">Email:</label>
+        <input class="in_cadastro" type="email" id="email" name="email"  required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="telefone" class="labell">Telefone:</label>
+        <input class="in_cadastro" type="tel" id="telefone" name="telefone"  required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="senha" class="labell">Senha:</label>
+        <input class="in_cadastro" type="password" id="senha" name="senha"  required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="confirmarSenha" class="labell">Repetir Senha:</label>
+        <input class="in_cadastro" type="password" id="confirmarSenha" name="confirmar_senha"  required>
+      </div>
+
+      <button type="submit" id="btn-cadastrar">Cadastrar</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
