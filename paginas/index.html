@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empréstimo de livro</title>
+    <title>Menu da biblioteca</title>
     <link rel="stylesheet" href="../cs/style.css">
 </head>
-<body id="body_emprestimo">
-  
-    <script src="../js/menu.js"></script>
-    <h1 class="titulo">Empréstimo de livro</h1>
+<body id="body">
+    <h1 class="titulo">Menu da biblioteca</h1>
     <div id="menu-container"></div>
+    <script src="../js/menu.js"></script>
+    
+    <h1 id="livros">Amostrar de livros</h1>
 
-    <div id="menu_emprestimo">
-        <input class="in_emprestimo" type="text" placeholder="Nome do livro">
-        <input class="in_emprestimo" type="date">
-        <label for="Data de empréstimo">Data de empréstimo</label>
-        <input class="in_emprestimo" type="date">
-        <label for="Data de devolução">Data de devolução</label>
+    <div id="imagens_livros">
+        <img class="imagen_menu" src="../imagens/livro1_menu.jpg" alt="Imagem 1">
+        <img class="imagen_menu" src="../imagens/livro2_menu.jpg" alt="Imagem 2">
     </div>
-
-    <button class="botao_emprestimo" onclick="emprestarLivro()">Reservar livro</button>
-
+    
     <footer class="footer">
   <div class="footer-container">
     <h2>Contato</h2>

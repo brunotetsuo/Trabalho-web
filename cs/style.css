@@ -1,5 +1,6 @@
 * {
     overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -19,14 +20,12 @@
 }
 
 #menu_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    border: 3px solid rgb(3, 138, 26);
+    display: list-item;
+    gap: 50%;
     box-shadow: 0px 0px 10px rgb(3, 138, 26);
     background-color: #000000;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 100%;
     width: 60%;
     padding: 1%;
     margin-left: 19%;
@@ -83,7 +82,7 @@
 
 #menu_adicionar {
     display: flex;
-    margin-top: 5%;
+    margin-top: 3%;
     gap: 10%;
     border: 3px solid rgb(3, 138, 26);
     box-shadow: 0px 0px 10px rgb(3, 138, 26);
@@ -164,8 +163,9 @@ input[type="date"] {
     color: rgb(255, 255, 255);
     padding: 1%;
     width: 15%;
-    margin-left: 44%;
-    margin-top: 1%;
+    margin-left: 42%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 #botao_adicionar:hover {
@@ -249,6 +249,7 @@ label {
     width: 15%;
     margin-left: 42%;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .botao_emprestimo:hover {
@@ -308,7 +309,7 @@ label {
   text-align: center;
   text-decoration: none;
   margin-top: 1%;
-  margin-left: 23%;
+  margin-left: 43%;
   justify-content: center;
 }
 
@@ -341,8 +342,8 @@ label {
   background: rgba(0, 0, 0, 0.9);
   padding: 40px;
   border-radius: 15px;
-  border: 2px solid #00ff88;
-  box-shadow: 0 0 20px #00ff88, inset 0 0 10px #00ff88;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0 0 20px rgb(3, 138, 26), inset 0 0 10px rgb(3, 138, 26);
   width: 350px;
   z-index: 1;
 }
@@ -367,7 +368,7 @@ label {
 #id_usuario, #senha_login {
   padding: 10px;
   border-radius: 8px;
-  border: 2px solid #00ff88;
+  border: 3px solid rgb(3, 138, 26);
   background: transparent;
   color: white;
   outline: none;
@@ -375,7 +376,7 @@ label {
 }
 
 #id_usuario:focus, #senha_login:focus {
-  border-color: #00ffaa;
+  border-color: 3px solid rgb(3, 138, 26);
 }
 
 #id_usuario:hover {
@@ -390,7 +391,7 @@ label {
   width: 100%;
   padding: 12px;
   background: transparent;
-  border: 2px solid #00ff88;
+  border: 3px solid rgb(3, 138, 26);
   color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -444,8 +445,8 @@ label {
   background: rgba(0, 0, 0, 0.9);
   padding: 40px;
   border-radius: 15px;
-  border: 2px solid #00ff88;
-  box-shadow: 0 0 25px #00ff88, inset 0 0 10px #00ff88;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0 0 25px rgb(3, 138, 26), inset 0 0 10px rgb(3, 138, 26);;
   width: 400px;
 }
 
@@ -464,7 +465,7 @@ label {
 .in_cadastro {
   padding: 10px;
   border-radius: 8px;
-  border: 2px solid #00ff88;
+  border: 3px solid rgb(3, 138, 26);
   background: transparent;
   color: white;
   outline: none;
@@ -476,7 +477,7 @@ label {
 }
 
 .in_cadastro:focus {
-  border-color: #00ffaa;
+  border-color: 3px solid rgb(3, 138, 26);
 }
 
 #btn-cadastrar {
@@ -484,7 +485,7 @@ label {
   padding: 12px;
   margin-top: 10px;
   background: transparent;
-  border: 2px solid #00ff88;
+  border: 3px solid rgb(3, 138, 26);
   color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -525,8 +526,8 @@ label {
   background: rgba(0, 0, 0, 0.9);
   padding: 50px;
   border-radius: 15px;
-  border: 2px solid #00ff88;
-  box-shadow: 0 0 30px #00ff88, inset 0 0 10px #00ff88;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0 0 30px rgb(3, 138, 26), inset 0 0 10px rgb(3, 138, 26);
   text-align: center;
   width: 420px;
   z-index: 1;
@@ -586,8 +587,8 @@ header h1 {
   display: inline-block;
   padding: 15px 40px;
   border-radius: 15px;
-  border: 2px solid #00ff66;
-  box-shadow: 0 0 15px #00ff66;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
 }
 
 .search-box {
@@ -600,10 +601,10 @@ header h1 {
   max-width: 500px;
   padding: 12px;
   border-radius: 10px;
-  border: 2px solid #00ff66;
+  border: 3px solid rgb(3, 138, 26);
   background: black;
   color: white;
-  box-shadow: 0 0 10px #00ff66;
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
 }
 
 .catalogo {
@@ -618,14 +619,16 @@ header h1 {
   border-radius: 15px;
   padding: 15px;
   text-align: center;
-  border: 2px solid #00ff66;
-  box-shadow: 0 0 10px #00ff66;
+  border: 3px solid rgb(3, 138, 26);
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
+  border-radius: 10px;
   transition: 0.3s;
 }
 
 .livro:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #00ff66;
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
+  border-radius: 10px;
 }
 
 .livro img {
@@ -648,11 +651,12 @@ header h1 {
   padding: 10px;
   width: 100%;
   border-radius: 10px;
-  border: 2px solid #00ff66;
+  border: 3px solid rgb(3, 138, 26);
   background: black;
   color: white;
   cursor: pointer;
-  box-shadow: 0 0 10px #00ff66;
+  box-shadow: 0px 0px 10px rgb(3, 138, 26);
+  border-radius: 10px;
 }
 
 #reserva:hover {
@@ -677,13 +681,7 @@ header h1 {
   background-attachment: fixed;
   backdrop-filter: blur(3px);
 }
-* {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-}
+
 
 .titulo {
     border: 3px solid rgb(3, 138, 26);
@@ -697,11 +695,6 @@ header h1 {
     margin: 0 auto;
 }
 
-/* ... (todo seu código permanece EXATAMENTE igual, sem alteração) ... */
-
-/* ================= RESPONSIVIDADE ================= */
-
-/* Tablets */
 @media (max-width: 1024px) {
 
     .titulo {
@@ -762,7 +755,6 @@ header h1 {
     }
 }
 
-/* Celulares */
 @media (max-width: 768px) {
 
     * {
@@ -823,7 +815,6 @@ header h1 {
     }
 }
 
-/* Celulares pequenos */
 @media (max-width: 480px) {
 
     * {
@@ -861,5 +852,204 @@ header h1 {
 
     .search-box input {
         width: 90%;
+    }
+
+}
+
+
+.menu-topo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+#menuBotao {
+    background-color: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -350px; 
+    width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    border-left: 2px solid #00ff00;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px;
+    transition: 0.3s;
+}
+
+
+.menu.aberto {
+    right: 0;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: 0.3s;
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.menu a:hover {
+    color: #00ff00;
+}
+
+
+.menu a.ativo {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.topo {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+	}
+	
+	.menu-botao {
+		display: block;
+		align-self: flex-end; 
+	}
+	
+	.menu {
+		display: none;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.menu.aberto {
+		display: flex; }
+}
+
+.footer {
+    background-color: black;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.footer-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.link img {
+    width: 30px;
+    height: 30px;
+}
+
+.link:hover {
+    color: #00ff00;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    .contatos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .link {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .menu {
+        width: 70%; 
+        right: -100%; 
+        padding-top: 80px;
+    }
+
+    .menu.aberto {
+        right: 0;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    #menuBotao {
+        font-size: 22px;
+        padding: 12px 16px;
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .menu {
+        width: 250px;
+    }
+
+    .menu a {
+        font-size: 19px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .menu {
+        width: 300px;
+    }
+
+    .menu a {
+        font-size: 18px;
     }
 }

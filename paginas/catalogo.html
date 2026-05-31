@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="../cs/style.css">
 </head>
 <body id="body_catalogo">
+ 
+  <script src="../js/menu.js"></script>
 
   <header>
     <h1>Catálogo da Biblioteca</h1>
   </header>
+  <div id="menu-container"></div>
 
   <div class="search-box">
     <input type="text" id="search" placeholder="Buscar livro..." onkeyup="buscarLivro()">
@@ -44,7 +47,23 @@
 
   </div>
 
-  <a class="voltar_menu" href="menu.html">Voltar</a>
+  <footer class="footer">
+  <div class="footer-container">
+    <h2>Contato</h2>
+
+    <div class="contatos">
+      <a href="https://instagram.com/seuusuario" target="_blank" class="link">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://wa.me/5599999999999" target="_blank" class="link">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
