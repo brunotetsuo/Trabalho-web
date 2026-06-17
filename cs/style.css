@@ -712,149 +712,6 @@ header h1 {
     margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-
-    .titulo {
-        width: 80%;
-    }
-
-    #livros {
-        width: 60%;
-    }
-
-    .imagen_menu {
-        width: 40%;
-        margin-left: 30%;
-    }
-
-    #menu_adicionar {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5%;
-        gap: 20px;
-    }
-
-    #botao_adicionar {
-        width: 40%;
-        margin-left: 30%;
-    }
-
-    .botao_emprestimo {
-        width: 40%;
-        margin-left: 30%;
-    }
-
-    #menu_emprestimo {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .in_emprestimo {
-        width: 100%;
-    }
-
-    .voltar_menu,
-    #voltar_menu_emprestimo,
-    .voltar_menu_consulta {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .catalogo {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-
-    * {
-        font-size: 18px;
-    }
-
-    .titulo {
-        width: 90%;
-    }
-
-    #livros {
-        width: 80%;
-    }
-
-    .imagen_menu {
-        width: 70%;
-        margin-left: 15%;
-    }
-
-    #menu_adicionar {
-        flex-direction: column;
-        padding: 10%;
-    }
-
-    .in_adicionar,
-    .in-data {
-        width: 100%;
-    }
-
-    #botao_adicionar {
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .botao_emprestimo {
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .catalogo {
-        grid-template-columns: 1fr;
-    }
-
-    .livro img {
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    * {
-        font-size: 16px;
-    }
-
-    .titulo {
-        padding: 10px;
-    }
-
-    #livros {
-        width: 90%;
-    }
-
-    .imagen_menu {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #botao_adicionar,
-    .botao_emprestimo {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .voltar_menu,
-    #voltar_menu_emprestimo,
-    .voltar_menu_consulta {
-        width: 70%;
-    }
-
-    .search-box input {
-        width: 90%;
-    }
-
-}
 
 
 .menu-topo {
@@ -919,27 +776,7 @@ header h1 {
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
-	.topo {
-		flex-direction: column;
-		align-items: stretch;
-		gap: 12px;
-	}
-	
-	.menu-botao {
-		display: block;
-		align-self: flex-end; 
-	}
-	
-	.menu {
-		display: none;
-		flex-direction: column;
-		gap: 8px;
-	}
 
-	.menu.aberto {
-		display: flex; }
-}
 
 
 .footer {
@@ -988,35 +825,70 @@ header h1 {
     transform: scale(1.05);
 }
 
+@media (max-width: 480px) {
 
-@media (max-width: 600px) {
-    .contatos {
+    body {
+        font-size: 16px;
+    }
+
+    .titulo {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #livros {
+        width: 90%;
+    }
+
+    .imagen_menu {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #menu_adicionar {
         flex-direction: column;
-        gap: 15px;
+        width: 90%;
+        margin: 20px auto;
+        padding: 10%;
+        gap: 20px;
     }
 
-    .footer-container {
-        padding: 20px;
+    .in_adicionar,
+    .in-data {
+        width: 100%;
     }
 
-    .link {
+    #botao_adicionar,
+    .botao_emprestimo {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .voltar_menu,
+    #voltar_menu_emprestimo,
+    .voltar_menu_consulta {
+        width: 70%;
+        margin: 20px auto;
         justify-content: center;
     }
-}
 
-@media (max-width: 770px) {
-
-    .menu {
-        width: 70%; 
-        right: -100%; 
-        padding-top: 80px;
+    .search-box input {
+        width: 90%;
     }
 
-    #menu_container {
-        gap: 15px;
-        width: 40%;
-        margin-top: 200%;
-        padding: 10px;
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .menu {
+        width: 80%;
+        right: -100%;
+        top: 0;
+        padding-top: 100px;
+        align-items: center;
     }
 
     .menu.aberto {
@@ -1024,42 +896,154 @@ header h1 {
     }
 
     .menu a {
-        font-size: 20px;
-        padding: 15px 0;
-    }
-
-    #menuBotao {
-        font-size: 22px;
-        padding: 12px 16px;
+        width: 80%;
+        text-align: center;
     }
 }
 
+@media (max-width: 768px) {
 
+    body {
+        font-size: 18px;
+    }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+    .titulo {
+        width: 90%;
+    }
 
+    #livros {
+        width: 80%;
+    }
+
+    .imagen_menu {
+        width: 70%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #menu_adicionar {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        padding: 10%;
+        gap: 20px;
+    }
+
+    #botao_adicionar,
+    .botao_emprestimo {
+        width: 60%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+   
     .menu {
-        width: 250px;
-        right: -250px;
-        padding-top: 60%;
+        width: 70%;
+        right: -100%;
+        top: 0;
+        padding-top: 120px;
+        align-items: center;
+    }
+
+    .menu.aberto {
+        right: 0;
     }
 
     .menu a {
-        font-size: 19px;
+        width: 80%;
+        text-align: center;
+    }
+} 
+
+@media (max-width: 1024px) {
+
+    .titulo {
+        width: 80%;
+    }
+
+    #livros {
+        width: 60%;
+    }
+
+    .imagen_menu {
+        width: 40%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #menu_adicionar {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    #botao_adicionar,
+    .botao_emprestimo {
+        width: 40%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    #menu_emprestimo {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .in_emprestimo {
+        width: 100%;
+    }
+
+    .voltar_menu,
+    #voltar_menu_emprestimo,
+    .voltar_menu_consulta {
+        width: 40%;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+   
+    .menu {
+        width: 250px;
+        right: -250px;
+        top: 0;
+        padding-top: 120px;
+        align-items: center;
+    }
+
+    .menu.aberto {
+        right: 0;
     }
 }
-
 
 @media (min-width: 1025px) {
 
     .menu {
         width: 300px;
-        margin-top: 10%;
+        right: -300px;
+        top: 0;
+        padding-top: 120px;
+        align-items: center;
+    }
+
+    .menu.aberto {
+        right: 0;
     }
 
     .menu a {
-        font-size: 18px;
+        text-align: center;
     }
 }
-
-
