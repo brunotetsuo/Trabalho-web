@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu da biblioteca</title>
-    <link rel="stylesheet" href="../cs/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body id="body">
-    <h1 class="titulo">Menu da biblioteca</h1>
-    <div id="menu-container"></div>
-    <script src="../js/menu.js"></script>
-    
-    <h1 id="livros">Amostrar de livros</h1>
+  <h1 class="titulo">Biblioteca</h1>
+  <div id="menu-container"></div>
 
-    <div id="imagens_livros">
-        <img class="imagen_menu" src="../imagens/livro1_menu.jpg" alt="Imagem 1">
-        <img class="imagen_menu" src="../imagens/livro2_menu.jpg" alt="Imagem 2">
-    </div>
-    
-    <footer class="footer">
-  <div class="footer-container">
-    <h2>Contato</h2>
-
-    <div class="contatos">
-      <a href="https://instagram.com/seuusuario" target="_blank" class="link">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        <span>Instagram</span>
-      </a>
-
-      <a href="https://wa.me/5599999999999" target="_blank" class="link">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        <span>WhatsApp</span>
-      </a>
-    </div>
+  <div id="menu_principal">
+    <a class="menu_link" href="catalogo.html">Catálogo</a>
+    <a class="menu_link" href="adicionar.html">Cadastrar Livro</a>
+    <a class="menu_link" href="emprestimo.html">Cadastrar Empréstimo</a>
+    <a class="menu_link" href="devolucao.html">Empréstimos Ativos</a>
+    <a class="menu_link" href="historico.html">Histórico de Empréstimos</a>
   </div>
-</footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/inserirDados.js"></script>
+  <script>
+    inserirDadosTeste();
+  </script>
+
+  <div id="footer-container"></div>
 </body>
+
 </html>

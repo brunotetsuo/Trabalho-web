@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar livro</title>
+    <title>Editar livro</title>
     <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body id="body_adicionar">
 
     <script src="../js/menu.js"></script>
     <script src="../js/script.js"></script>
-    <h1 class="titulo"> Cadastrar livro</h1>
+    <h1 class="titulo"> Editar livro</h1>
     <div id="menu-container"></div>
     <div id="menu_adicionar">
         <div class="div_adicionar">
+            
             <input id="titulo" class="in_adicionar" type="text" placeholder="Título do livro">
             <input id="autor" class="in_adicionar" type="text" placeholder="Autor do livro">
             <input id="categoria" class="in_adicionar" type="text" placeholder="Gênero / Categoria">
             <input id="ano" class="in_adicionar" type="text" placeholder="Ano de publicação">
+            <input id="status" class="in_adicionar" type="text" placeholder="Status">
         </div>
     </div>
 
-    <button id="botao_adicionar" onclick="adicionarLivro()">Cadastrar livro</button>
+    <button id="botao_adicionar" onclick="editarLivro()">Editar livro</button>
 
     <footer class="footer">
   <div class="footer-container">

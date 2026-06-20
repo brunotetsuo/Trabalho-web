@@ -23,6 +23,59 @@ body {
     margin: 0 auto;
 }
 
+#menu_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: fit-content;
+    margin: 50px auto;
+    padding: 25px 35px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px solid rgb(3, 138, 26);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(3, 138, 26);
+}
+
+#menu_principal .menu_link {
+    display: inline-block;
+    min-width: 180px;
+    padding: 15px 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    background-color: #111;
+    border: 2px solid rgb(3, 138, 26);
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+#menu_principal .menu_link:hover {
+    background-color: rgb(3, 138, 26);
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(3, 138, 26);
+}
+
+@media (max-width: 768px) {
+    #menu_principal {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    #menu_principal .menu_link {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
 #menu_container {
     display: list-item;
     gap: 50%;
@@ -108,7 +161,7 @@ body {
 }
 
 .in_adicionar {
-    margin-top: 6%;
+    margin: 3%;
     background-color: #000000;
     border-radius: 10px;
     border: 3px solid rgb(3, 138, 26);
@@ -116,11 +169,10 @@ body {
     color: white;
     padding: 1%;
     width: 79%;
-
 }
 
 .in-data {
-    margin-top: 6%;
+    margin: 3%;
     background-color: #000000;
     border-radius: 10px;
     border: 3px solid rgb(3, 138, 26);
@@ -163,18 +215,62 @@ input[type="date"] {
     border: 3px solid rgb(3, 138, 26);
     box-shadow: 0px 0px 10px rgb(3, 138, 26);
     border-radius: 10px;
-    background-color: #000000;
+    background: #000000;
     color: rgb(255, 255, 255);
     padding: 1%;
     width: 15%;
     margin-left: 42%;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-size: 80%;
 }
 
 #botao_adicionar:hover {
-    color: rgb(30, 255, 0);
+    background: #00ff66;
+    color: rgb(0, 0, 0);
     transition: 0.5s;
+}
+
+#botao_reserva {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgb(3, 138, 26);
+    background: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    font-size: 80%;
+}
+
+#botao_reserva:hover {
+  background: #00ff66;
+  color: black;
+}
+
+#botao_devolver {
+    border: 3px solid rgb(3, 138, 26);
+    box-shadow: 0px 0px 10px rgb(3, 138, 26);
+    border-radius: 10px;
+    background: rgb(3, 138, 26);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 80%;
+}
+
+#botao_devolver:hover {
+    background: #00ff66;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+#emprestado {
+    color: red;
 }
 
 .voltar_menu {
@@ -619,6 +715,25 @@ header h1 {
   flex: 1;
   align-content: start;
 }
+
+.livros_para_devolucao {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 30px;
+  flex: 1;
+  align-content: start;
+}
+
+.historico_emprestimos {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 30px;
+  flex: 1;
+  align-content: start;
+}
+
 .livro-vazio {
   grid-column: 1 / -1;
   display: flex;
@@ -639,20 +754,33 @@ header h1 {
   font-size: 18px;
 }
 
-.excluir{
+#botao_deletar{
     color: red;
     border: 2px solid red;
     border-radius: 10px;
     margin: 10px;
-    padding: 10px 40px;
+    padding: 10px 20px;
     background: black;
 }
 
-.excluir:hover{
+#botao_deletar:hover{
     color: white;
     background: red;
 }
 
+#botao_editar{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+}
+
+#botao_editar:hover{
+    color: white;
+    background: rgb(121, 121, 121);
+}
 
 .livro {
   background: black;
@@ -685,25 +813,7 @@ header h1 {
 }
 
 .livro p {
-  color: #ccc;
-}
-
-#reserva {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 10px;
-    border: 3px solid rgb(3, 138, 26);
-    background: black;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgb(3, 138, 26);
-    border-radius: 10px;
-}
-
-#reserva:hover {
-  background: #00ff66;
-  color: black;
+  color: #cccccc;
 }
 
 #body_catalogo {
@@ -788,6 +898,14 @@ header h1 {
     .catalogo {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
+
+    .livros_para_devolucao {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .historico_emprestimos {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -835,6 +953,14 @@ header h1 {
     }
 
     .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .livros_para_devolucao {
+        grid-template-columns: 1fr;
+    }
+
+    .historico_emprestimos {
         grid-template-columns: 1fr;
     }
 
